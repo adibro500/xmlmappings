@@ -1,0 +1,25 @@
+<h3>Table Details</h3>
+<form #f="ngForm">
+<div>
+Source table name: <input type="text" [(ngModel)]="sTableName" name="stable"  #source_table_name="ngModel">
+</div>
+<br/>
+<div>
+
+Target table name: <input type="text" [(ngModel)]="tTableName" name="ttable"  #target_table_name="ngModel">
+</div>
+<br/>
+
+<div>
+
+Source database name: <input type="text" [(ngModel)]="sDBName" name="sdb"  #source_db_name="ngModel">
+</div>
+<br/>
+
+<div>
+Target database name: <input type="text" [(ngModel)]="tDBName" name="tdb"  #target_db_name="ngModel">
+</div>
+<br/>
+
+<button (click)="callApi()">Export to XML</button>
+</form>
